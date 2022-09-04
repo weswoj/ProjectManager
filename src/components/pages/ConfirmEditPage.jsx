@@ -22,13 +22,13 @@ function ConfirmEditPage({ handleEdit }) {
       <h2>Projekt po edycji:</h2>
       <DisplayProject project={project} />
       <h3>Czy na pewno chcesz wprowadzić te zmiany?</h3>
-      <Link to="/projectList" onClick={deleteTempProject}>
+      <Link className="link" to="/projectList" onClick={deleteTempProject}>
         Anuluj
       </Link>
-      <Link to="/editProject" onClick={addTemporary}>
+      <Link className="link" to="/editProject" onClick={addTemporary}>
         Powrót
       </Link>
-      <Link to="/projectList" onClick={returnProject}>
+      <Link className="link" to="/projectList" onClick={returnProject}>
         Zatwierdź
       </Link>
     </>

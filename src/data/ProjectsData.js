@@ -15,6 +15,7 @@ let ProjectsData = [
         id: "1",
         text: "Komentarz Testowy 1",
         time: [15, 38],
+        authorId: "A",
       },
       {
         author: "Ewa Eksperymentalna",
@@ -22,6 +23,7 @@ let ProjectsData = [
         id: "2",
         text: "Komentarz Testowy 2",
         time: [15, 37],
+        authorId: "E",
       },
       {
         author: "Tomek Testowy",
@@ -29,6 +31,7 @@ let ProjectsData = [
         id: "3",
         text: "Komentarz Testowy 3",
         time: [15, 37],
+        authorId: "T",
       },
     ],
   },

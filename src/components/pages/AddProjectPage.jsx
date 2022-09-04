@@ -18,9 +18,9 @@ function AddProjectPage({ handleAdd }) {
       <h2>Nowy Projekt:</h2>
       <DisplayProject project={newProject[1]} />
       <h3>Czy na pewno chcesz dodać ten projekt?</h3>
-      <Link to="/projectList">Anuluj</Link>
-      <Link to="/addForm" onClick={addTemporary}>Powrót</Link>
-      <Link to="/projectList" onClick={returnProject}>Zatwierdź</Link>
+      <Link className="link" to="/projectList">Anuluj</Link>
+      <Link className="link" to="/addForm" onClick={addTemporary}>Powrót</Link>
+      <Link className="link" to="/projectList" onClick={returnProject}>Zatwierdź</Link>
     </>
   );
 }

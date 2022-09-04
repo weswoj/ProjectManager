@@ -1,4 +1,5 @@
 function DisplayComments({ comment }) {
+
   let minutes = comment.time[1]
   let minutesText = ""
   if (minutes < 10) {
@@ -6,10 +7,11 @@ function DisplayComments({ comment }) {
   } else {
     minutesText = minutes
   }
+
   return (
     <>
       <div>
-        <table>
+        <table className="commentTable">
           <tbody>
             <tr>
               <th>Autor</th>
@@ -28,6 +30,7 @@ function DisplayComments({ comment }) {
       </div>
     </>
   );
+
 }
 
 export default DisplayComments;

@@ -4,17 +4,17 @@ import ProjectContext from "../../context/ProjectContext"
 import UserDisplay from "../UserDisplay"
 
 function UserConfigConfirm() {
-  const {loggedUser, temporaryUser, changeUserdata} = useContext(ProjectContext)
+  const { loggedUser, temporaryUser, changeUserdata } = useContext(ProjectContext)
   return (
     <>
-    <h2>Dane użytkownika przed edycją</h2>
-    <UserDisplay user={loggedUser} />
-    <h2>Dane użytkownika po wprowadzeniu zmian</h2>
-    <UserDisplay user = {temporaryUser} />
+      <h2>Dane użytkownika przed edycją</h2>
+      <UserDisplay user={loggedUser} />
+      <h2>Dane użytkownika po wprowadzeniu zmian</h2>
+      <UserDisplay user={temporaryUser} />
 
-    <Link to="/projectList">Anuluj</Link>
-    <Link to="/userConfig">Powrót</Link>
-    <Link to="/projectList" onClick={changeUserdata}>Wykonaj</Link>
+      <Link className="link" to="/projectList">Anuluj</Link>
+      <Link className="link" to="/userConfig">Powrót</Link>
+      <Link className="link" to="/projectList" onClick={changeUserdata}>Wykonaj</Link>
     </>
   )
 }

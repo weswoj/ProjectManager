@@ -43,6 +43,7 @@ function AddCommentPage({ handleAddComment }) {
       ],
       time: [dateInfo.getHours(), dateInfo.getMinutes()],
       author: loggedUser.name + " " + loggedUser.surname,
+      authorId: loggedUser.id
     };
     let comment = commentObject;
     comment = {
@@ -74,16 +75,22 @@ function AddCommentPage({ handleAddComment }) {
     <>
       <h3>Dodaj komentarz do projektu</h3>
       <DisplayProject project={selectedProject} />
-      <input type="text" onChange={handleComment} value={commentText}></input>
+      <div>
+        <h3>
+          Dodaj Komentarz
+        </h3>
+        <input type="text" onChange={handleComment} value={commentText}></input>
+      </div>
+
       <div>{message}</div>
       <div>
-        <Link to="/projectList">Powrót</Link>
+        <Link className="link" to="/projectList">Powrót</Link>
         {commentValid ? (
-          <Link to="/projectDetails" onClick={setComment}>
+          <Link className="link" to="/projectDetails" onClick={setComment}>
             Zatwierdź Komentarz
           </Link>
         ) : (
-          <Link to="/addComment">Zatwierdź Komentarz</Link>
+          <Link className="link" to="/addComment">Zatwierdź Komentarz</Link>
         )}
       </div>
     </>

@@ -13,8 +13,8 @@ function DeleteProjectPage({ handleDelete }) {
       <h2>Wybrany Projekt:</h2>
       <DisplayProject project={selectedProject} />
       <h3>Czy na pewno chcesz usunąć ten projekt?</h3>
-      <Link to="/projectList">Anuluj</Link>
-      <Link to="/projectList" onClick={deleteProject}>Usuń</Link>
+      <Link className="link" to="/projectList">Anuluj</Link>
+      <Link className="link" to="/projectList" onClick={deleteProject}>Usuń</Link>
     </>
   );
 }

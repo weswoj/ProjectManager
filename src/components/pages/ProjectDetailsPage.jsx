@@ -29,7 +29,7 @@ function ProjectDetailsPage({ handleAddComment }) {
 
       </div>
       <div>
-        <Link to="/projectList">Powrót</Link>
+        <Link className="link" to="/projectList">Powrót</Link>
       </div>
     </>
   );

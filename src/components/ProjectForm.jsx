@@ -175,8 +175,8 @@ function ProjectForm({ previousProject, header, fromProp }) {
     <>
       <form>
         <h2>{header}</h2>
-        <div>
-          <table className="form-table">
+        <div className="form">
+          <table >
             <tbody>
               <tr>
                 <td>Nazwa Projektu (min. 8 znaków)</td>
@@ -274,11 +274,11 @@ function ProjectForm({ previousProject, header, fromProp }) {
 
               <tr>
                 <td>
-                  <Link to="/projectList" onClick={deleteTempProject}>Anuluj</Link>
+                  <Link className="link" to="/projectList" onClick={deleteTempProject}>Anuluj</Link>
                 </td>
                 <td>
                   {checkPassed ? (
-                    <Link to={linkVal} state={[previousProject, project]}>
+                    <Link className="link" to={linkVal} state={[previousProject, project]}>
                       Dalej
                     </Link>
                   ) : (

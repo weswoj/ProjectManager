@@ -1,4 +1,3 @@
-import "./LoginPage.css";
 import { useContext, useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 import ProjectContext from "../../context/ProjectContext";
@@ -16,7 +15,7 @@ function LoginPage() {
   const handleLogin = () => {
     logUser(usernameTyped);
   };
-  const incorrectLogin = () =>{
+  const incorrectLogin = () => {
     setMessage("Nieprawidłowe dane logowania")
   }
   const checkCredentials = () => {
@@ -32,21 +31,21 @@ function LoginPage() {
   };
   const handleUsername = (event) => {
     setUsernameTyped(event.currentTarget.value);
-    if (message){
+    if (message) {
       setMessage(null)
     }
-    
+
   };
   const handlePassword = (event) => {
     setPasswordTyped(event.currentTarget.value);
-    if (message){
+    if (message) {
       setMessage(null)
     }
   };
 
   return (
     <div className="login">
-      <h1>Zaloguj się by zobaczyć listę projektów</h1>
+      <h2>Zaloguj się by zobaczyć listę projektów</h2>
       <form>
         <label>
           <p>Nazwa użytkownika (e-mail)</p>
@@ -61,11 +60,11 @@ function LoginPage() {
         </div>
         <div>
           {credentialsCorrect ? (
-            <Link to="/projectList" onClick={handleLogin}>
+            <Link className="link" to="/projectList" onClick={handleLogin}>
               Log in
             </Link>
           ) : (
-            <Link to="/" onClick={incorrectLogin}>
+            <Link className="link" to="/" onClick={incorrectLogin}>
               Log in
             </Link>
           )}

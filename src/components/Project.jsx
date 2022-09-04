@@ -27,22 +27,22 @@ function Project({ project }) {
                 <tbody>
                   <tr>
                     <td>
-                      <Link to="/editProject" onClick={getClickedId}>
+                      <Link className="link" to="/editProject" onClick={getClickedId}>
                         Edycja
                       </Link>
                     </td>
                     <td>
-                      <Link to="/addComment" onClick={getClickedId}>
+                      <Link className="link" to="/addComment" onClick={getClickedId}>
                         Dodaj komentarz
                       </Link>
                     </td>
                     <td>
-                      <Link to="/projectDetails" onClick={getClickedId}>
+                      <Link className="link" to="/projectDetails" onClick={getClickedId}>
                         Szczegóły Projektu
                       </Link>
                     </td>
                     <td>
-                      <Link to="/deleteProject" onClick={getClickedId}>
+                      <Link className="link" to="/deleteProject" onClick={getClickedId}>
                         Usuń
                       </Link>
                     </td>

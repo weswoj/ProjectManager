@@ -1,28 +1,90 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #696a89;
+  color: #fff;
+  line-height: 1.6;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}
-.project-table {
-  margin:5px;
-  border: 1px solid;
-  width:80%;
+h1,
+h2,
+h3,
+h4 {
   text-align: center;
 }
 
-.project-table th, td{
-  margin:2px;
-  border:1px solid;
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+.link {
+  color: rgb(58, 222, 149);
+  padding: 14px 25px;
+  text-decoration: none;
+  text-align: center;
+  display: inline-block;
+}
+.link:hover {
+  background-color: green;
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-table {
+  margin: auto;
+  border: 1px solid;
+  width: 80%;
+  text-align: center;
+}
+
+.project-table th,
+td {
+  margin: auto;
+  border: 1px solid;
+  text-align: center;
 }
 
 .project-subtable {
+  align-content: stretch;
+}
+
+.commentTable {
+  margin: auto;
+  border: 1px solid;
+  width: 60%;
+  text-align: center;
   align-content: center;
+  table-layout: fixed;
+}
+.commentTable th,
+td {
+  margin: auto;
+  border: 1px solid;
+  text-align: center;
+  width: 25%;
+}
+.form {
+  margin: auto;
+}
+div,
+table {
+  margin: auto;
+  text-align: center;
+}
+.addProject {
+  text-align: center;
+}
+.userConfig {
+  text-align: center;
+}
+.authorComment {
+  background-color: red;
 }

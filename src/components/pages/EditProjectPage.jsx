@@ -19,6 +19,7 @@ function EditProjectPage() {
         <DisplayProject project={selectedProject} />
       </div>
       <div>
+        <h3> Formularz do Edycji: </h3>
         <ProjectForm fromProp="edit" previousProject={project} />
       </div>
     </>

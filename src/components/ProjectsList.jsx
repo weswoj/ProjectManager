@@ -12,7 +12,7 @@ function Projects({ projData }) {
   }
   return (
     <>
-      <Link to="/">Wyloguj</Link>
+      <Link className="link" to="/">Wyloguj</Link>
       <h2>Projekty użytkownika {loggedUser.name}:</h2>
       <div className="project-list">
         {projData

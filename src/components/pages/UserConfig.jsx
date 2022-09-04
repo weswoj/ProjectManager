@@ -25,12 +25,12 @@ function UserConfig() {
       </div>
       <div>
         {editTriggered ? (
-          <Link to="/userConfigConfirm">Dalej</Link>
+          <Link className="link" to="/userConfigConfirm">Dalej</Link>
         ) : (
           console.log()
         )}
       </div>
-      {!editTriggered ? <Link to="/projectList">Powrót</Link> : console.log()}
+      {!editTriggered ? <Link className="link" to="/projectList">Powrót</Link> : console.log()}
     </>
   );
 }
