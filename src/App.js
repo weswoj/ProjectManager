@@ -21,9 +21,23 @@ import AddCommentPage from "./components/pages/AddCommentPage";
 import TestPage from "./components/pages/TestPage";
 // Databases
 import { ProjectProvider } from "./context/ProjectContext";
-import ProjectsData from "./data/ProjectsData";
 function App() {
-  const [projData, setProjData] = useState(ProjectsData);
+  const [projData, setProjData] = useState([]);
+
+  useEffect(() => {
+    const getProjects = async () => {
+      const projectsFromServer = await fetchProjects();
+      setProjData(projectsFromServer);
+    };
+
+    getProjects();
+  }, []);
+  const fetchProjects = async () => {
+    const res = await fetch("http://localhost:5000/projects");
+    const data = await res.json();
+    return data;
+  };
+
   const addProject = (newProject) => {
     newProject.status = "NOWY";
     newProject.id = uuidv4();

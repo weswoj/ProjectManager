@@ -7,10 +7,13 @@ import DisplayProject from "../DisplayProject";
 
 
 function ProjectDetailsPage({ handleAddComment }) {
-
   const { selectedProject } = useContext(ProjectContext);
-  selectedProject.comments.sort((a, b) => b.time[1] - a.time[1]).sort((a, b) => b.time[0] - a.time[0])
-  selectedProject.comments.sort((a, b) => b.date[2] - a.date[2]).sort((a, b) => b.date[1] - a.date[1]).sort((a, b) => b.date[0] - a.date[0])
+  if (selectedProject.hasOwnProperty('comments')) {
+    selectedProject.comments.sort((a, b) => b.time[1] - a.time[1]).sort((a, b) => b.time[0] - a.time[0])
+    selectedProject.comments.sort((a, b) => b.date[2] - a.date[2]).sort((a, b) => b.date[1] - a.date[1]).sort((a, b) => b.date[0] - a.date[0])
+  }
+
+
   return (
     <>
       <div>

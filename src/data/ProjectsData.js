@@ -17,14 +17,14 @@ let ProjectsData = [
         time: [15, 38],
       },
       {
-        author: "Ewa Nieistniejąca",
+        author: "Ewa Eksperymentalna",
         date: [2022, 8, 2],
         id: "2",
         text: "Komentarz Testowy 2",
         time: [15, 37],
       },
       {
-        author: "Pan Komentator",
+        author: "Tomek Testowy",
         date: [2023, 8, 1],
         id: "3",
         text: "Komentarz Testowy 3",

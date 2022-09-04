@@ -34,16 +34,7 @@ export const ProjectProvider = ({ children }) => {
       phoneNumber: 789123456,
     },
   ]);
-  const [loggedUser, setLoggedUser] = useState({
-    id: "A",
-    name: "Adam",
-    surname: "Administrator",
-    password: "pass123",
-    age: 32,
-    sex: "mężczyzna",
-    email: "user123@mail.com",
-    phoneNumber: 123456789,
-  });
+  const [loggedUser, setLoggedUser] = useState({});
   const [temporaryUser, setTemporaryUser] = useState();
   const [temporaryProject, setTemporaryProject] = useState();
   const [selectedProject, setSelectedProject] = useState();
